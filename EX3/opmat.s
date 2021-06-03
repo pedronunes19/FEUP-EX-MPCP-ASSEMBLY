@@ -2,7 +2,7 @@
 .global OpMat
 .type OpMat, "function"
 
-OpMat:	stp X29, X30, [SP, -48]!
+OpMat:	        stp X29, X30, [SP, -48]!
 		mov X29, SP
 
 		// passar tudo para outros registos
@@ -11,7 +11,7 @@ OpMat:	stp X29, X30, [SP, -48]!
 		mov X11, X2   // 8
 		mov X12, X3   // 8
 
-		mov W15, -1  // resultado da última 'O'
+		mov W15, -1  // resultado da Ãºltima 'O'
 
 		// guardar coisas na pilha
 		str X12, [X29, 16]
@@ -51,7 +51,7 @@ l_loop: cbz W9, l_end
 		b l_loop
 l_end:  ldr X12, [X29, 16]   // trazer valor de volta da pilha
 		ldrb W9, [X29, 33]  //       ""             ""
-		add X11, X11, 1  // preparar X11 para encontrar a próxima letra na sequência
+		add X11, X11, 1  // preparar X11 para encontrar a prÃ³xima letra na sequÃªncia
 		b loop
 
 
@@ -65,8 +65,8 @@ c_loop: cbz W9, c_end
 		sub W9, W9, 1
 		add X0, X0, X3
 		b c_loop
-c_end:  mov W9, W3  // ir buscar W9 (neste caso já estava em W3)
-		add X11, X11, 1  // preparar X11 para encontrar a próxima letra na sequência
+c_end:  mov W9, W3  // ir buscar W9 (neste caso jÃ¡ estava em W3)
+		add X11, X11, 1  // preparar X11 para encontrar a prÃ³xima letra na sequÃªncia
 		b loop
 
 
