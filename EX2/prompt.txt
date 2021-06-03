@@ -1,0 +1,3 @@
+Escreva uma sub-rotina que aceita duas sequências: seq_A e seq_B. Os elementos de seq_B são todos distintos e apenas podem ser letras minúsculas, sem acentos ou outras alterações.
+A sub-rotina altera para a sua versão maiúscula, todos os carateres de seq_A que surgem na seq_B. Apenas carateres que sejam letras minúsculas, sem acentos ou outras alterações, deverão ser alterados. 
+Para além de alterar a seq_A, a sub-rotina deve retornar o número de carateres de seq_A que são alterados.

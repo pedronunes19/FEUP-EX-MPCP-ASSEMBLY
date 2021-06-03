@@ -1,0 +1,11 @@
+Pretende-se implementar a sub-rotina OpMat capaz de realizar uma sequência de operações sobre uma matriz com NCOL colunas e NLIN linhas.
+As dimensões e os elementos da matriz são valores de 8 bits sem sinal.
+A matriz é representada por um vetor com NCOL*NLIN elementos formado pela sequência de linhas da matriz.
+
+A sequência de operações a realizar é formada por carateres que definem operações, algumas das quais possuem argumentos (valores de 8 bits sem sinal). As operações são:
+'L', lin, n - atribui o valor n a todos os elementos da linha lin (0 <= lin < NLIN),
+'C', col, n - atribui o valor n a todos os elementos da coluna col (0 <= col < NCOL),
+'P', col, lin, n - atribui o valor n ao elemento da coluna col e linha lin,
+'B' - "binariza" a matriz, isto é, valores no intervalo [0; 127] são substituídos por 0 e os restantes são substituídos por 255,
+'O', n - conta o número de ocorrências do valor n na matriz (chama subrotina ocorr, não desenvolvida neste exercício),
+'X' - indica fim das operações a realizar pela sub-rotina, estando sempre presente numa sequência de operações. Pode ocorrer em qualquer posição da sequência (ver exemplo a) em baixo).

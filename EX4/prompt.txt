@@ -1,0 +1,10 @@
+Considerando uma sequência de pontos e uma sequência de circunferências no plano cartesiano, pretende-se implementar a sub-rotina closestCircle que, para cada ponto, identifica  a circunferência mais próxima.
+
+O vetor VP contém as coordenadas cartesianas (x,y) de NP pontos representadas em vírgula flutuante com precisão simples. O tamanho de VP é 2*NP.
+O vetor VC contém as coordenadas do centro e o raio (xc,yc,r) de NC circunferências representados em vírgula flutuante com precisão dupla. O tamanho de VC é 3*NC.
+O vetor ID é preenchido por closestCircle com o índice (0 a NC-1) da circunferência mais próxima de cada ponto. O tamanho de ID é NP.
+Assumir que NP>0 e NC>0.
+
+Considerar a distância entre um ponto e o ponto da circunferência mais próximo, dada por d=sqrt((x−xc)^2+(y−yc)^2)-r.
+Se d>0 então o ponto não pertence ao círculo, pelo que a distância é "válida". Se o ponto pertencer ao círculo, a respetiva circunferência não é considerada para solução. No caso de um ponto pertencer a todos os círculos, a posição de ID referente a esse ponto deve manter o valor -1 pré-preenchido na inicialização em main().
+No caso de haver várias circunferências à mesma distância de um ponto e se essa distância for a mínima, considerar o índice da última circunferência encontrada nessa situação.
