@@ -1,0 +1,5 @@
+Pretende-se obter o histograma das classificações de uma unidade curricular, isto é, o número de ocorrências de cada classificação, assim como a classificação média.
+A sub-rotina a desenvolver, histo, deverá utilizar instruções SIMD sempre que as operações necessárias possam envolver o processamento de vários dados em paralelo.
+
+O vetor C contém as classificações de uma unidade curricular representadas por inteiros de 0 a 20. O tamanho de C é N (>0) e é múltiplo de 16.
+A sub-rotina histo preenche o vetor H com a frequência de cada uma das classificações e retorna a média das classificações (valor do tipo float).
